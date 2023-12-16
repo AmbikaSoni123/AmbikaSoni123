@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AmbikaSoni123
 - 👀 I’m interested in Learning new things.
 - 🌱 I’m currently learning Data Science.
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate on Data Science community.
 - 📫 How to reach me ...
 
 <!---
