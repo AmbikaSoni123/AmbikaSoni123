@@ -1,15 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 BitwiseTwo
-// For this challenge you will perform a bitwise operation on two binary numbers. // have the function BitwiseTwo(strArr) take the array of strings stored in strArr, which will only contain two strings of equal length that represent binary numbers, and return a final binary string that performed the bitwise AND operation on both strings. A bitwise AND operation places a 1 in the new string where there is a 1 in both locations in the binary strings, otherwise it places a 0 in that spot. For example: if strArr is ["10111", "01101"] then your program should return the string "00101"
-
-
-# In[ ]:
-
+// For this challenge you will perform a bitwise operation on two binary numbers. 
+// have the function BitwiseTwo(strArr) take the array of strings stored in strArr, which will only contain two strings of equal length that represent binary numbers, 
+   and return a final binary string that performed the bitwise AND operation on both strings. A bitwise AND operation places a 1 in the new string where there is a 1 in both
+   locations in the binary strings, otherwise it places a 0 in that spot. For example: if strArr is ["10111", "01101"] then your program should return the string "00101"
 
 Common Bitwise Operators
 Here are the primary bitwise operators used in many programming languages:
@@ -39,9 +32,6 @@ Edit
 binary_string = "1101"
 decimal_value = int(binary_string, 2)
 print(decimal_value)  # Output: 13
-
-
-# In[ ]:
 
 
 [![Integer to Binary String in Python ...](https://images.openai.com/thumbnails/026f1d3479bbcefbe92d11516d25931f.png)](https://www.askpython.com/python/built-in-methods/integer-binary-string-python)
