@@ -1,0 +1,30 @@
+# Using the Python language, have the function WordCount(str) take the str string parameter being passed 
+# and return the number of words the string contains (ie. "Never eat shredded wheat" would return 4). Words will be separated by single spaces. 
+
+Method 1:
+count=0
+
+def WordCount(str):
+    global count
+    for i in str.split():
+        count=count+1
+    return count
+    
+WordCount("Never eat shredded wheat") 
+
+
+Method 2:
+str =  "Never eat shredded wheat"
+list1 = str.split()
+len(list1)
+
+Notes:
+Use len(): For most cases, to get the number of elements in a list.
+
+Use a for loop: If you need to manually count elements, though it's less efficient.
+
+Use Counter: To count occurrences of each element in the list.
+
+Use sum() with a generator: For conditional counting.
+
+Use length_hint(): For estimating the length of iterators, not standard lists.
