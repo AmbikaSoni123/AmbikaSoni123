@@ -1,0 +1,23 @@
+Have the function ConsonantCount(str) take the str string parameter being passed and return the number of consonants the string 
+contains.
+
+Examples
+Input: "Hello World"
+Output: 7
+Input: "Alphabets"
+Output: 6
+
+def ConsonantCount(str):
+    count = 0
+    list1 = ['a', 'e','i','o', 'u', 'A','E','I','O','U',' ']
+    for x in str:
+        if x not in list1:
+            count += 1
+    return count
+
+print(ConsonantCount("Alphabets"))
+print(ConsonantCount("Hello World"))
+
+output: 
+6
+7
