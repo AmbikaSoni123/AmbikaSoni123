@@ -23,60 +23,37 @@ Right Shift (>>): Shifts bits to the right, filling with 0s on the left for unsi
 # In[ ]:
 
 
-To convert binary strings to integers in Python, you can use the built-in int() function, specifying 2 as the base. Here's how you can do it:
+To convert binary strings to integers in Python, you can use the built-in int() function, specifying 2 as the base. 
+Here's how you can do it:
 
 ✅ Method 1: Using int() with Base 2
-python
-Copy
-Edit
 binary_string = "1101"
 decimal_value = int(binary_string, 2)
 print(decimal_value)  # Output: 13
 
-
-[![Integer to Binary String in Python ...](https://images.openai.com/thumbnails/026f1d3479bbcefbe92d11516d25931f.png)](https://www.askpython.com/python/built-in-methods/integer-binary-string-python)
-
 To convert an integer to a binary string in Python, you can utilize several built-in methods, each offering different formatting options. Here's a breakdown of the most common approaches:
-
----
 
 ### 1. Using `bin()` Function
 
 The `bin()` function returns the binary representation of an integer prefixed with `'0b'`:([GeeksforGeeks][1])
-
-```python
 number = 42
 binary_string = bin(number)
 print(binary_string)  # Output: '0b101010'
 ```
-
-
-
 If you prefer the binary string without the `'0b'` prefix, you can slice it:
 
-```python
 binary_string = bin(number)[2:]
 print(binary_string)  # Output: '101010'
 ```
-
-
-
----
-
 ### 2. Using `format()` Function
 
 The `format()` function provides a way to format numbers into binary strings without the `'0b'` prefix:
 
-```python
 binary_string = format(number, 'b')
 print(binary_string)  # Output: '101010'
 ```
-
-
-
 For zero-padded binary strings, specify the width:([Stack Overflow][2])
 
-```python
 padded_binary = format(number, '08b')
 print(padded_binary)  # Output: '00101010'
 ```
