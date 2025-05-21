@@ -1,0 +1,29 @@
+1. Write a Python program to find the length of the last word.
+Input : Python Exercises
+Output : 9
+
+def LengthLastWord(str):
+    list1=str.split()
+    return len(list1[1])
+
+LengthLastWord('Python Exercises')
+
+output:9
+
+***************************************************************
+
+2. Write a Python program to add two binary numbers.
+Input : ('11', '1')
+Output : 100
+
+def AddBinaryNum(bin1,bin2):
+    Total = int(bin1,2)+int(bin2,2)
+    bin_Total=format(Total,'b')
+    return bin_Total
+
+AddBinaryNum('11','1')
+
+Output : '100'
+
+*************************************************************************
+3. 
