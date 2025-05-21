@@ -1,0 +1,11 @@
+Write a Python program to find the length of the last word.
+Input : Python Exercises
+Output : 9
+
+def LengthLastWord(str):
+    list1=str.split()
+    return len(list1[1])
+
+LengthLastWord('Python Exercises')
+
+output:9
