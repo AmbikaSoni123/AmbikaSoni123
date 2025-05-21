@@ -26,4 +26,40 @@ AddBinaryNum('11','1')
 Output : '100'
 
 *************************************************************************
-3. 
+3. Write a Python program to calculate the length of a string.
+
+def stringLength(str):
+    return len(str)
+
+stringLength('Python program')
+
+output: 14
+
+**************************************************************************
+4. # Write a Python program to determine the length of a string by converting it to a list and summing 1 for each element.
+
+def string_length(str):
+    count=0
+    list1 = list(str)
+    for x in list1:
+        count += 1
+    return count
+
+string_length("Hello, world!")
+output: 13
+____________________________________
+
+alternate Method:
+
+def string_length(s):
+    return sum(1 for _ in list(s))
+
+# Example usage
+input_string = "Hello, world!"
+print(f"The length of the string is: {string_length(input_string)}")
+
+# Using _ as a placeholder in loops or expressions where the value is not needed is a widely accepted Python convention.
+
+*****************************************************************************************
+
+5. 
