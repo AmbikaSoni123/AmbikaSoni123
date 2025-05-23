@@ -1,0 +1,52 @@
+Write a Python program to create a lambda function that subtracts 15 from a given number and then cubes the result.
+
+r = lambda a : (a-15)**3
+r(25)
+
+output: 1000
+
+##################################################################################################################
+
+Write a Python program to create a lambda function that takes two numbers and returns their sum if their product is even, otherwise returns their difference.
+
+r = lambda x,y : (x+y) if (x+y)%2 == 0 else (x-y)
+r(34, 26)
+
+output: 60
+
+###################################################################################################################
+
+Write a Python program to create a lambda function that takes a number and returns True if adding 15 results in a prime number.
+
+r = lambda x: (x+15)%2==0 
+r(31)
+
+output: True
+
+Step 1: Define a Prime Checking Function
+
+def is_Prime(n):
+    if n <= 1:
+        return False
+    else:
+        for i in range(2, int(n**0.5)+1):
+            if n % i == 0:
+                return False
+        return True
+                
+        
+Step 2: Create the Lambda Function
+r = lambda x: is_prime(x + 15)
+print(r(14))
+
+output: True
+
+######################################################################################################################
+
+Write a Python program to create a lambda function that multiplies two numbers and, if the product exceeds 15, divides it by 15.
+
+r = lambda x, y: (x * y) / 15 if (x * y) > 15 else x * y
+print(r(2, 4))  # Output: 8
+
+##########################################################################################################################
+    
